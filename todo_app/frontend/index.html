@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+</head>
+<body onload="fetchData()">
+    Todo title
+    <input type="text" id="title"><br>
+    Todo description
+    <input type="text" id="description"><br>
+    <button onclick="postData()" id="postBtn">Send todo</button>
+    <button id="updateTodo" onclick="updateTodo()">Update todo</button>
+    <br>
+    
+    <!-- here we will append all todo body -->
+    <div id="mainBody"></div>
+
+    <script src="./get.todo.js"></script>
+    <script src="./post.todo.js"></script>
+    <script src="./update.todo.js"></script>
+    <script src="./delete.todo.js"></script>
+</body>
+</html>
